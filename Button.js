@@ -6,9 +6,13 @@ import {
   Text,
   TouchableOpacity,
   TouchableNativeFeedback,
-  View,
-  ViewPropTypes
+  View
 } from 'react-native';
+
+import {
+  ViewPropTypes,
+  ImagePropTypes,
+} from 'deprecated-react-native-prop-types';
 
 import coalesceNonElementChildren from './coalesceNonElementChildren';
 
