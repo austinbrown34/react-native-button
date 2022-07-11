@@ -12,6 +12,7 @@ import {
 import {
   ViewPropTypes,
   ImagePropTypes,
+  TextPropTypes
 } from 'deprecated-react-native-prop-types';
 
 import coalesceNonElementChildren from './coalesceNonElementChildren';
@@ -22,12 +23,12 @@ export default class Button extends Component {
   static propTypes = {
     ...TouchableOpacity.propTypes,
     accessibilityLabel: PropTypes.string,
-    allowFontScaling: Text.propTypes.allowFontScaling,
+    allowFontScaling: TextPropTypes.allowFontScaling,
     containerStyle: ViewPropTypes.style,
     disabledContainerStyle: ViewPropTypes.style,
     disabled: PropTypes.bool,
-    style: Text.propTypes.style,
-    styleDisabled: Text.propTypes.style,
+    style: TextPropTypes.style,
+    styleDisabled: TextPropTypes.style,
     childGroupStyle: ViewPropTypes.style,
     androidBackground: PropTypes.object,
   };
